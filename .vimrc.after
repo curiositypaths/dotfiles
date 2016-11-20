@@ -12,3 +12,6 @@ set splitbelow
 
 "Configure vroom pluing to fail fast
 let g:vroom_spec_command = 'rspec --fail-fast'
+
+"Remove ~ symbol indicating end of buffer
+hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
