@@ -1,0 +1,14 @@
+"Color scheme
+colorscheme solarized
+
+"Cursor highlight position
+set cursorline
+set cursorcolumn
+let g:vroom_spec_command = 'rspec --fail-fast'
+
+"Panel management
+set splitright
+set splitbelow
+
+"Configure vroom pluing to fail fast
+let g:vroom_spec_command = 'rspec --fail-fast'
