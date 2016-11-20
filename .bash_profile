@@ -1,6 +1,16 @@
+# Configurations
+# Bash history
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+shopt -s histappend
+
+# Prompt
+PS1="\w\n> "
+
+# Initialize rbenv
 eval "$(rbenv init -)"
 
-# Configurations
 # GIT_MERGE_AUTO_EDIT
 # This variable configures git to not require a message when you merge.
 export GIT_MERGE_AUTOEDIT='no'
@@ -9,7 +19,7 @@ export GIT_MERGE_AUTOEDIT='no'
 # Will activate bash git completion if installed
 # via homebrew
 if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
+	. `brew --prefix`/etc/bash_completion
 fi
 
 # Case-Insensitive Auto Completion
