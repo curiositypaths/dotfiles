@@ -15,3 +15,8 @@ let g:vroom_spec_command = 'rspec --fail-fast'
 
 "Remove ~ symbol indicating end of buffer
 hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
+
+"Formatting style
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
