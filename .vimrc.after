@@ -1,9 +1,12 @@
 "Color scheme
 colorscheme solarized
 
+"Line numbers
+set nonumber
+set relativenumber
+
 "Cursor highlight position
 set cursorline
-set cursorcolumn
 let g:vroom_spec_command = 'rspec --fail-fast'
 
 "Panel management
