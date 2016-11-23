@@ -23,3 +23,17 @@ hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+
+"Simplify split panes navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+"Fix scroll issue in Iterm2?
+set mouse=a
+if has("mouse_sgr")
+  set ttymouse=sgr
+else
+  set ttymouse=xterm2
+end
