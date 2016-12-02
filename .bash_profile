@@ -90,6 +90,9 @@ function extract () {
 # LS
 alias l='ls -lah'
 
+#rspec
+alias tspec="rspec --fail-fast"
+
 # Git
 alias gcl="git clone"
 alias gst="git status"
