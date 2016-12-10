@@ -90,6 +90,9 @@ function extract () {
 # LS
 alias l='ls -lah'
 
+#Bundle
+alias be='bundle exec'
+
 #rspec
 alias tspec="rspec --fail-fast"
 
