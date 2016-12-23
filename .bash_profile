@@ -85,6 +85,8 @@ function extract () {
     echo "'$1' is not a valid file"
   fi
 }
+# Load SSH keys
+ssh-add -A &> /dev/null
 
 # Aliases
 # LS
