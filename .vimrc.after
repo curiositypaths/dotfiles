@@ -40,3 +40,9 @@ if has("mouse_sgr")
 else
   set ttymouse=xterm2
 end
+
+" Use system clipboard
+set clipboard=unnamed
+
+"Learn vim
+"autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()

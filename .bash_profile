@@ -12,7 +12,7 @@ function parse_git_branch {
 # This function builds your prompt. It is called below
 function prompt {
   # Define the prompt character
-  local   CHAR="♥"
+  local   CHAR="⏀ "
   # Define some local colors
   local   RED="\[\e[0;31m\]"
   local   BLUE="\[\e[0;34m\]"
@@ -23,7 +23,7 @@ function prompt {
   # ♥ ☆ - Keeping some cool ASCII Characters for reference
 
   # Here is where we actually export the PS1 Variable which stores the text for your prompt
-  export PS1="\[\e]2;\u@\h\a[$GRAY_TEXT_BLUE_BACKGROUND\t$RESET]$RED\$(parse_git_branch) $GREEN\W\n$BLUE//$RED $CHAR $RESET"
+  export PS1="\[\e]2;\u@\h\a$RED\$(parse_git_branch) $BLUE\W\n$RESET\n$CHAR $RESET"
   PS2='> '
   PS4='+ '
 }
@@ -114,3 +114,6 @@ alias gbb="git branch -b"
 # Hidden File Visibility
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+export NVM_DIR="/Users/jason/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
