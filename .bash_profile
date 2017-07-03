@@ -2,7 +2,7 @@
 # Bash history
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/share/npm/bin
 shopt -s histappend
 
 # This function is called in your prompt to output your active git branch.
@@ -12,7 +12,7 @@ function parse_git_branch {
 # This function builds your prompt. It is called below
 function prompt {
   # Define the prompt character
-  local   CHAR="⏀ "
+  local   CHAR=" >"
   # Define some local colors
   local   RED="\[\e[0;31m\]"
   local   BLUE="\[\e[0;34m\]"
@@ -115,5 +115,6 @@ alias gbb="git branch -b"
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-export NVM_DIR="/Users/jason/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
