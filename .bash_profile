@@ -2,7 +2,7 @@
 # Bash history
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/share/npm/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/share/npm/bin:~/bin/mongodb-osx-x86_64-enterprise-3.4.6/bin
 shopt -s histappend
 
 # This function is called in your prompt to output your active git branch.
@@ -98,6 +98,9 @@ alias be='bundle exec'
 #rspec
 alias tspec="rspec --fail-fast"
 
+#hub
+alias git=hub
+
 # Git
 alias gcl="git clone"
 alias gst="git status"
@@ -110,6 +113,9 @@ alias gb="git branch"
 alias gba="git branch -a"
 alias gcam="git commit -am"
 alias gbb="git branch -b"
+
+# Mongo University
+alias mongou='mongo "mongodb://cluster0-shard-00-00-jxeqq.mongodb.net:27017,cluster0-shard-00-01-jxeqq.mongodb.net:27017,cluster0-shard-00-02-jxeqq.mongodb.net:27017/test?replicaSet=Cluster0-shard-0" --authenticationDatabase admin --ssl --username m001-student --password m001-mongodb-basics'
 
 # Hidden File Visibility
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'

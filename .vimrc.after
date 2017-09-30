@@ -46,3 +46,28 @@ set clipboard=unnamed
 
 "Learn vim
 "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+
+"Enable Flow support for the pangloss/vim-javascript plugin
+"let g:javascript_plugin_flow = 1
+
+"Enable JSX support for non .jsx files (mxw/vim-jsx)
+let g:jsx_ext_required = 0
+
+"Enable concealing
+set conceallevel=1
+let g:javascript_conceal_function             = "ƒ"
+let g:javascript_conceal_this                 = "@"
+let g:javascript_conceal_return               = "⇚"
+let g:javascript_conceal_undefined            = "¿"
+let g:javascript_conceal_NaN                  = "ℕ"
+let g:javascript_conceal_static               = "•"
+let g:javascript_conceal_super                = "Ω"
+let g:javascript_conceal_arrow_function       = "⇒"
+
+
+let g:ale_lint_on_text_changed = 1
+let g:airline#extensions#ale#enabled = 1
+
+
+let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
+let g:ale_linter_aliases = {'jsx': 'css'}
