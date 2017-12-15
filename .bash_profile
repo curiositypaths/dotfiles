@@ -96,10 +96,7 @@ alias l='ls -lah'
 alias be='bundle exec'
 
 #rspec
-alias tspec="rspec --fail-fast"
-
-#hub
-alias git=hub
+alias fspec="rspec --fail-fast"
 
 # Git
 alias gcl="git clone"
@@ -113,9 +110,6 @@ alias gb="git branch"
 alias gba="git branch -a"
 alias gcam="git commit -am"
 alias gbb="git branch -b"
-
-# Mongo University
-alias mongou='mongo "mongodb://cluster0-shard-00-00-jxeqq.mongodb.net:27017,cluster0-shard-00-01-jxeqq.mongodb.net:27017,cluster0-shard-00-02-jxeqq.mongodb.net:27017/test?replicaSet=Cluster0-shard-0" --authenticationDatabase admin --ssl --username m001-student --password m001-mongodb-basics'
 
 # Hidden File Visibility
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
