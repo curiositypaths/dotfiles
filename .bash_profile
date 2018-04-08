@@ -1,12 +1,12 @@
 # Configurations
 
 function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
 }
 
 # This function is called in your prompt to output your active git branch.
 function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+ git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
 }
 
 # This function builds your prompt. It is called below
@@ -23,7 +23,7 @@ function prompt {
   # ♥ ☆ - Keeping some cool ASCII Characters for reference
 
   # Here is where we actually export the PS1 Variable which stores the text for your prompt
-  export PS1="\[\e]2;\u@\h\a$RED $(parse_git_dirty)$(parse_git_branch) $BLUE\W\n$RESET\n$CHAR $RESET"
+  export PS1="\[\e]2;\u@\h\a$RED\$(parse_git_branch) $BLUE\W\n$RESET\n$CHAR $RESET"
   PS2='> '
   PS4='+ '
 }
