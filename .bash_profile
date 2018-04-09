@@ -41,3 +41,11 @@ eval "$(rbenv init -)"
 
 # Load SSH keys
 ssh-add -A &> /dev/null
+
+# Use bash-completion, if available
+if [ -f /sw/etc/bash_completion ]; then
+   . /sw/etc/bash_completion
+fi
+
+# Case-Insensitive Auto Completion
+bind "set completion-ignore-case on"
