@@ -21,8 +21,8 @@
   publish = !legit publish \"$@\"
   graft = !legit graft \"$@\"
 [user]
-  name = curiositypaths
-  email = curiositypaths@users.noreply.github.com
+	name = curiositypaths
+	email = curiositypaths@users.noreply.github.com
 [color]
   ui = true
   diff = auto
@@ -34,3 +34,8 @@
   funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)
 [push]
   default = current
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
