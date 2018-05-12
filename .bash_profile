@@ -1,14 +1,22 @@
 # Configurations
+<<<<<<< HEAD
 # Bash history
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/share/npm/bin
 shopt -s histappend
+=======
+
+function parse_git_dirty {
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
+}
+>>>>>>> 678d650461e24e10752bd35e8023d84d1ef92e8f
 
 # This function is called in your prompt to output your active git branch.
 function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+ git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
 }
+
 # This function builds your prompt. It is called below
 function prompt {
   # Define the prompt character
@@ -31,22 +39,25 @@ function prompt {
 # Finally call the function and our prompt is all pretty
 prompt
 
+# Bash history
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+shopt -s histappend
+
 # Initialize rbenv
 eval "$(rbenv init -)"
 
-# GIT_MERGE_AUTO_EDIT
-# This variable configures git to not require a message when you merge.
-export GIT_MERGE_AUTOEDIT='no'
+# Load SSH keys
+ssh-add -A &> /dev/null
 
-# Git Bash Completion
-# Will activate bash git completion if installed
-# via homebrew
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
+# Use bash-completion, if available
+if [ -f /sw/etc/bash_completion ]; then
+   . /sw/etc/bash_completion
 fi
 
 # Case-Insensitive Auto Completion
 bind "set completion-ignore-case on"
+<<<<<<< HEAD
 
 # Editors
 # Tells your shell that when a program requires various editors, use sublime.
@@ -118,3 +129,5 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+=======
+>>>>>>> 678d650461e24e10752bd35e8023d84d1ef92e8f
