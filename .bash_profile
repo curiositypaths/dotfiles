@@ -1,16 +1,16 @@
 # Configurations
-<<<<<<< HEAD
 # Bash history
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/share/npm/bin
 shopt -s histappend
-=======
 
+# Bash path
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/share/npm/bin
+
+# Git support functions
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
 }
->>>>>>> 678d650461e24e10752bd35e8023d84d1ef92e8f
 
 # This function is called in your prompt to output your active git branch.
 function parse_git_branch {
@@ -57,15 +57,14 @@ fi
 
 # Case-Insensitive Auto Completion
 bind "set completion-ignore-case on"
-<<<<<<< HEAD
 
 # Editors
 # Tells your shell that when a program requires various editors, use sublime.
 # The -w flag tells your shell to wait until sublime exits
-export VISUAL="vim"
-export SVN_EDITOR="vim"
-export GIT_EDITOR="vim"
-export EDITOR="vim"
+export VISUAL="code"
+export SVN_EDITOR="code"
+export GIT_EDITOR="code"
+export EDITOR="code"
 
 # A function to easily grep for a matching process
 # USE: psg postgres
@@ -96,6 +95,7 @@ function extract () {
     echo "'$1' is not a valid file"
   fi
 }
+
 # Load SSH keys
 ssh-add -A &> /dev/null
 
@@ -129,5 +129,3 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-=======
->>>>>>> 678d650461e24e10752bd35e8023d84d1ef92e8f
