@@ -103,14 +103,14 @@ ssh-add -A &> /dev/null
 alias l='ls -lah'
 
 # Git
-alias gcl="git clone"
-alias gst="git status"
-alias gl="git pull"
-alias gp="git push"
-alias gd="git diff | subl"
-alias gc="git commit -v"
+alias gclone="git clone"
+alias gstatus="git status"
+alias gpull="git pull"
+alias gpush="git push"
+alias gdiff="git diff | subl"
+alias gcommit="git commit -v"
 alias gca="git commit -v -a"
-alias gb="git branch"
+alias gbranch="git branch"
 alias gba="git branch -a"
 alias gcam="git commit -am"
 alias gbb="git branch -b"
