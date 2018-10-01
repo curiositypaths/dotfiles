@@ -114,3 +114,6 @@ alias gbranch="git branch"
 alias gba="git branch -a"
 alias gcam="git commit -am"
 alias gbb="git branch -b"
+
+# Git auto complete
+source ~/.git-completion.bash
