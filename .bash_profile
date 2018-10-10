@@ -60,10 +60,10 @@ export NVM_DIR="$HOME/.nvm"
 # Editors
 # Tells your shell that when a program requires various editors, use sublime.
 # The -w flag tells your shell to wait until sublime exits
-export VISUAL="e"
-export SVN_EDITOR="e"
-export GIT_EDITOR="e"
-export EDITOR="e"
+export VISUAL="code"
+export SVN_EDITOR="code"
+export GIT_EDITOR="code"
+export EDITOR="code"
 
 # A function to easily grep for a matching process
 # USE: psg postgres
@@ -117,3 +117,10 @@ alias gbb="git branch -b"
 
 # Git auto complete
 source ~/.git-completion.bash
+
+# Brew autocomplete
+# if type brew 2&>/dev/null; then
+#   for completion_file in $(brew --prefix)/etc/bash_completion.d/*; do
+#     source "$completion_file"
+#   done
+# fi
