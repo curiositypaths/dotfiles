@@ -115,12 +115,14 @@ alias gba="git branch -a"
 alias gcam="git commit -am"
 alias gbb="git branch -b"
 
-# Git auto complete
-source ~/.git-completion.bash
-
 # Brew autocomplete
-# if type brew 2&>/dev/null; then
-#   for completion_file in $(brew --prefix)/etc/bash_completion.d/*; do
-#     source "$completion_file"
-#   done
-# fi
+if type brew &>/dev/null; then
+  HOMEBREW_PREFIX="$(brew --prefix)"
+  if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
+    source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+  else
+    for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*; do
+      [[ -r "$COMPLETION" ]] && source "$COMPLETION"
+    done
+  fi
+fi
