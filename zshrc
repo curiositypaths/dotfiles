@@ -139,5 +139,17 @@ antigen bundle agkozak/zsh-z
 # Load the theme.
 antigen theme robbyrussell
 
+# Fish like augo-suggestions
+antigen bundle zsh-users/zsh-autosuggestions
+
 # Tell Antigen that you're done.
 antigen apply
+
+# history setup
+setopt SHARE_HISTORY
+SAVEHIST=5000
+HISTSIZE=4999
+setopt HIST_EXPIRE_DUPS_FIRST
+
+# never beep
+setopt NO_BEEP
