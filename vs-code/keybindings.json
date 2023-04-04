@@ -209,19 +209,6 @@
         "when": "editorTextFocus"
     },
     /**
-  * amVim Finder Fix
-  **/
-    {
-        "key": "enter",
-        "command": "editor.action.nextMatchFindAction",
-        "when": "findWidgetVisible"
-    },
-    {
-        "key": "shift+enter",
-        "command": "editor.action.previousMatchFindAction",
-        "when": "findWidgetVisible"
-    },
-    /**
   * IntelliSense
   **/
     {
