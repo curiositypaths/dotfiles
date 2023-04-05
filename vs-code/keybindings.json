@@ -31,6 +31,10 @@
         "key": "cmd+t",
         "command": "workbench.action.terminal.toggleTerminal"
     },
+    {
+        "key": "cmd+k cmd+p",
+        "command":  "workbench.action.togglePanel"
+    },
     /**
   * Toggle Font Size
   **/
