@@ -62,6 +62,13 @@
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "git.confirmSync": false,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": false,
+    "plaintext": false,
+    "scminput": false,
+    "yaml": false
+  },
   "gitProjectManager.baseProjectsFolders": [
     "~/Code"
   ],
@@ -84,8 +91,12 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.persistentSessionReviveProcess": "never",
+  "window.commandCenter": false,
   "window.newWindowDimensions": "offset",
   "window.restoreWindows": "none",
+  "window.title": " ",
+  "window.titleBarStyle": "custom",
+  "workbench.activityBar.visible": false,
   "workbench.colorCustomizations": {
     "[Night Owl (No Italics)]": {
       "activityBar.background": "#000C1D",
@@ -108,19 +119,8 @@
   "workbench.editor.restoreViewState": false,
   "workbench.editor.showIcons": false,
   "workbench.editor.showTabs": false,
+  "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": false,
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "window.titleBarStyle": "custom",
-  "window.title": " ",
-  "workbench.activityBar.visible": false,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  }
+  "workbench.statusBar.visible": false
 }
