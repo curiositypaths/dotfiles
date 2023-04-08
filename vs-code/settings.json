@@ -86,7 +86,6 @@
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "window.newWindowDimensions": "offset",
   "window.restoreWindows": "none",
-  "workbench.activityBar.visible": false,
   "workbench.colorCustomizations": {
     "[Night Owl (No Italics)]": {
       "activityBar.background": "#000C1D",
@@ -115,5 +114,13 @@
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "window.titleBarStyle": "custom",
-  "window.title": " "
+  "window.title": " ",
+  "workbench.activityBar.visible": false,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
