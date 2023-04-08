@@ -1,16 +1,31 @@
 {
   "[elixir]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[phoenix-heex]": {
     "editor.defaultFormatter": "JakeBecker.elixir-ls",
     "editor.formatOnSave": true
   },
   "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "breadcrumbs.enabled": false,
   "css.hover.documentation": true,
@@ -30,11 +45,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.overviewRulerBorder": false,
   "editor.renderWhitespace": "all",
-  "editor.rulers": [
-    80,
-    100,
-    120
-  ],
+  "editor.rulers": [80, 100, 120],
   "editor.scrollbar.scrollByPage": true,
   "editor.scrollbar.verticalScrollbarSize": 7,
   "editor.snippetSuggestions": "top",
@@ -69,9 +80,7 @@
     "scminput": false,
     "yaml": false
   },
-  "gitProjectManager.baseProjectsFolders": [
-    "~/Code"
-  ],
+  "gitProjectManager.baseProjectsFolders": ["~/Code"],
   "gitProjectManager.checkRemoteOrigin": false,
   "gitProjectManager.maxDepthRecursion": 8,
   "gitProjectManager.storeRepositoriesBetweenSessions": true,
