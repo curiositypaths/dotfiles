@@ -3,7 +3,7 @@
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
   excludesfile = /Users/jason/.gitignore
-	editor = /usr/local/bin/code
+	editor = vim
 [alias]
   st = status
   ci = commit
