@@ -104,7 +104,7 @@ fi
 # export ERL_AFLAGS="-kernel shell_history enabled"
 
 # Enable postgresql command line
-# path+=('/Applications/Postgres.app/Contents/Versions/latest/bin')
+path+=('/Applications/Postgres.app/Contents/Versions/latest/bin')
 
 # Load SSH key
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519 &>/dev/null
