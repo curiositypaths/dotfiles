@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,7 +70,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(git)
+plugins=(git asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,50 +100,14 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# enable rbenv
-eval "$(rbenv init -)"
-export NVM_DIR="$HOME/.nvm"
-
-# enable nvm
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# enable iex shell history
-export ERL_AFLAGS="-kernel shell_history enabled"
+# # enable iex shell history
+# export ERL_AFLAGS="-kernel shell_history enabled"
 
 # Enable postgresql command line
-path+=('/Applications/Postgres.app/Contents/Versions/latest/bin')
+# path+=('/Applications/Postgres.app/Contents/Versions/latest/bin')
 
 # Load SSH key
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519 &>/dev/null
-
-# Source antigen package manager
-source ~/.dotfiles/antigen.zsh
-
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle git
-# antigen bundle heroku
-# antigen bundle pip
-# antigen bundle lein
-antigen bundle command-not-found
-
-# Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-# z directory navigation
-antigen bundle agkozak/zsh-z
-
-# Load the theme.
-antigen theme robbyrussell
-
-# Fish like augo-suggestions
-antigen bundle zsh-users/zsh-autosuggestions
-
-# Tell Antigen that you're done.
-antigen apply
 
 # history setup
 setopt SHARE_HISTORY
