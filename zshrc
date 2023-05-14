@@ -120,3 +120,5 @@ setopt HIST_EXPIRE_DUPS_FIRST
 
 # never beep
 setopt NO_BEEP
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
