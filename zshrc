@@ -122,3 +122,17 @@ setopt HIST_EXPIRE_DUPS_FIRST
 setopt NO_BEEP
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# aliases
+# git
+alias gswip="gaa; gcmsg 'WIP'"
+
+# Intall erlang docs
+KERL_BUILD_DOCS=yes
+
+# XDG_CONFIG
+export XDG_CONFIG_HOME="$HOME/.config"
+
+# nvim aliases
+alias e="nvim"
+alias ed="nvim ."
