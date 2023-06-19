@@ -27,19 +27,19 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "breadcrumbs.enabled": false,
   "css.hover.documentation": true,
   "css.hover.references": true,
-  "diffEditor.ignoreTrimWhitespace": false,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.emptySelectionClipboard": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.formatOnSave": false,
   "editor.formatOnType": true,
   "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": true,
-  "editor.lineHeight": 20,
+  "editor.lineHeight": 22,
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -49,7 +49,6 @@
   "editor.scrollbar.scrollByPage": true,
   "editor.scrollbar.verticalScrollbarSize": 7,
   "editor.snippetSuggestions": "top",
-  "editor.stickyScroll.enabled": true,
   "editor.suggest.showReferences": true,
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": false,
@@ -80,10 +79,6 @@
     "scminput": false,
     "yaml": false
   },
-  "gitProjectManager.baseProjectsFolders": ["~/Code"],
-  "gitProjectManager.checkRemoteOrigin": false,
-  "gitProjectManager.maxDepthRecursion": 8,
-  "gitProjectManager.storeRepositoriesBetweenSessions": true,
   "html.hover.references": true,
   "html.suggest.html5": true,
   "javascript.referencesCodeLens.enabled": false,
@@ -124,7 +119,7 @@
       "sideBar.foreground": "#8BADC1"
     }
   },
-  "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.restoreViewState": false,
   "workbench.editor.showIcons": false,
   "workbench.editor.showTabs": false,
@@ -132,35 +127,12 @@
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
+  "redhat.telemetry.enabled": false,
   "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
-    },
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
-    },
-    {
-      "before": ["K"],
-      "commands": ["lineBreakInsert"],
-      "silent": true
-    }
-  ],
-  "vim.leader": "<space>",
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false
-  }
+  "cSpell.userWords": ["esbuild", "floki", "noreply"],
+  "editor.stickyScroll.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.zoomLevel": 1,
+  "workbench.editor.tabSizing": "shrink",
+  "breadcrumbs.enabled": false
 }
