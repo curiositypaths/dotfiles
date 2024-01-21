@@ -52,7 +52,7 @@
   "editor.suggest.showReferences": true,
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": false,
-  "editor.wordBasedSuggestions": false,
+  "editor.wordBasedSuggestions": "off",
   "elixirLS.dialyzerEnabled": true,
   "elixirLS.fetchDeps": false,
   "elixirLS.signatureAfterComplete": false,
@@ -72,13 +72,6 @@
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "git.confirmSync": false,
-  "github.copilot.enable": {
-    "*": true,
-    "markdown": false,
-    "plaintext": false,
-    "scminput": false,
-    "yaml": false
-  },
   "html.hover.references": true,
   "html.suggest.html5": true,
   "javascript.referencesCodeLens.enabled": false,
@@ -100,7 +93,6 @@
   "window.restoreWindows": "none",
   "window.title": " ",
   "window.titleBarStyle": "custom",
-  "workbench.activityBar.visible": false,
   "workbench.colorCustomizations": {
     "[Night Owl (No Italics)]": {
       "activityBar.background": "#000C1D",
@@ -119,20 +111,26 @@
       "sideBar.foreground": "#8BADC1"
     }
   },
-  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.restoreViewState": false,
   "workbench.editor.showIcons": false,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
-  "redhat.telemetry.enabled": false,
   "vim.useCtrlKeys": true,
-  "cSpell.userWords": ["esbuild", "floki", "noreply"],
+  "cSpell.userWords": ["Buongiorno", "citext", "esbuild", "Fucina", "noreply"],
   "editor.stickyScroll.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "window.zoomLevel": 1,
   "workbench.editor.tabSizing": "shrink",
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.colorTheme": "Community Material Theme Ocean",
+  "workbench.preferredDarkColorTheme": "Community Material Theme Lighter High Contrast",
+  "workbench.preferredHighContrastColorTheme": "Community Material Theme Ocean High Contrast",
+  "redhat.telemetry.enabled": false,
+  "workbench.activityBar.location": "hidden"
 }
