@@ -3,41 +3,49 @@
   "buffer_font_size": 15,
   "cursor_blink": false,
   "dock": "right",
+  "features": {
+    "copilot": false
+  },
   "font_family": "Operator Mono Light",
   "git_gutter": "tracked_files",
   "git_status": true,
   "inlay_hints": {
     "enabled": false,
-    "show_type_hints": true,
+    "show_other_hints": true,
     "show_parameter_hints": true,
-    "show_other_hints": true
+    "show_type_hints": true
   },
   "journal": {
-    "path": "~/code/occupy_dogma/journal",
-    "hour_format": "hour24"
+    "hour_format": "hour24",
+    "path": "~/code/"
   },
   "language_overrides": {
     "Elixir": {
       "format_on_save": {
         "external": {
-          "command": "mix",
-          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
+          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"],
+          "command": "mix"
         }
-      }
+      },
+      "lsp": "next_ls",
+      "show_copilot_suggestions": false
+    },
+    "Ruby": {
+      "show_copilot_suggestions": false
     }
   },
   "lsp": {
     "typescript-language-server": {
       "initialization_options": {
         "preferences": {
+          "includeInlayEnumMemberValueHints": true,
+          "includeInlayFunctionLikeReturnTypeHints": true,
+          "includeInlayFunctionParameterTypeHints": true,
           "includeInlayParameterNameHints": "all",
           "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
-          "includeInlayFunctionParameterTypeHints": true,
-          "includeInlayVariableTypeHints": true,
-          "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
           "includeInlayPropertyDeclarationTypeHints": true,
-          "includeInlayFunctionLikeReturnTypeHints": true,
-          "includeInlayEnumMemberValueHints": true
+          "includeInlayVariableTypeHints": true,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": false
         }
       }
     }
@@ -46,7 +54,12 @@
   "scrollbar": {
     "show": "never"
   },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
   "terminal": {
+    "copy_on_select": true,
     "font_size": 15
   },
   "theme": "Andromeda",
