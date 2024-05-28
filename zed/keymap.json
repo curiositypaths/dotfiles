@@ -1,0 +1,14 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-shft-t": ["task::Spawn", { "task_name": "test suite" }]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-shft-f": ["task::Spawn", { "task_name": "test suite" }]
+    }
+  }
+]

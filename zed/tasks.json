@@ -18,5 +18,10 @@
     "label": "break one",
     "command": "iex",
     "args": ["-S", "mix", "test", "-b", "$ZED_FILE:$ZED_ROW"]
+  },
+  {
+    "label": "ci",
+    "command": "mix",
+    "args": ["ci"]
   }
 ]
