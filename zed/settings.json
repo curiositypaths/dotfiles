@@ -33,6 +33,9 @@
     },
     "Ruby": {
       "show_copilot_suggestions": false
+    },
+    "JavaScript": {
+      "show_copilot_suggestions": false
     }
   },
   "lsp": {
