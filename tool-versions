@@ -1,4 +1,4 @@
-nodejs 20.14.0
+nodejs 20.15.0
 ruby 3.2.2
-elixir 1.17.0-otp-27
+elixir 1.17.1-otp-27
 erlang 27.0
