@@ -73,7 +73,7 @@ FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git asdf)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -136,3 +136,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # nvim aliases
 alias e="nvim"
 alias ed="nvim ."
+
+eval "$(zoxide init zsh)"
+
+eval "$(/Users/jason/.local/bin/mise activate zsh)"
+eval "$(~/.local/bin/mise activate zsh)"
