@@ -140,5 +140,5 @@ alias ed="nvim ."
 
 eval "$(zoxide init zsh)"
 
-eval "$(/Users/jason/.local/bin/mise activate zsh)"
-eval "$(~/.local/bin/mise activate zsh)"
+# mise
+eval "$(/opt/homebrew/bin/mise activate zsh)"
