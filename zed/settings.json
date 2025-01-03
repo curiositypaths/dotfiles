@@ -10,8 +10,6 @@
     "copilot": false
   },
   "font_family": "Operator Mono Light",
-  "git_gutter": "tracked_files",
-  "git_status": true,
   "inlay_hints": {
     "enabled": false,
     "show_other_hints": true,
