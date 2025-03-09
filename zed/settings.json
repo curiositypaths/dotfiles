@@ -3,9 +3,6 @@
     "html": true,
     "Zed Legacy Themes": true
   },
-  "project_panel": {
-    "dock": "right"
-  },
   "buffer_font_family": "Operator Mono Light",
   "buffer_font_size": 15,
   "cursor_blink": false,
@@ -14,6 +11,13 @@
     "copilot": false
   },
   "font_family": "Operator Mono Light",
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 500
+    }
+  },
   "inlay_hints": {
     "enabled": false,
     "show_other_hints": true,
@@ -56,6 +60,9 @@
       }
     }
   },
+  "project_panel": {
+    "dock": "right"
+  },
   "relative_line_numbers": true,
   "scrollbar": {
     "show": "never"
@@ -72,12 +79,5 @@
   "theme": "Zed Legacy:  Andromeda",
   "ui_font_family": "Operator Mono Light",
   "ui_font_size": 15,
-  "vim_mode": true,
-  "git": {
-    "git_gutter": "tracked_files",
-    "inline_blame": {
-      "enabled": true,
-      "delay_ms": 500
-    }
-  }
+  "vim_mode": true
 }
