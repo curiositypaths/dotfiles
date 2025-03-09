@@ -2,13 +2,13 @@
   {
     "context": "Workspace",
     "bindings": {
-      "alt-shft-t": ["task::Spawn", { "task_name": "test suite" }]
+      "alt-shift-t": ["task::Spawn", { "task_name": "test suite" }]
     }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "alt-shft-f": ["task::Spawn", { "task_name": "test suite" }]
+      "alt-shift-f": ["task::Spawn", { "task_name": "test suite" }]
     }
   }
 ]
