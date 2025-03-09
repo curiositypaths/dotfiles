@@ -128,17 +128,19 @@ setopt NO_BEEP
 # git
 alias gswip="gaa; gcmsg 'WIP'"
 
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Intall erlang docs
-KERL_BUILD_DOCS=yes
+export KERL_BUILD_DOCS=yes
+export KERL_CONFIGURE_OPTIONS="--without-javac"
 
 # XDG_CONFIG
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# nvim aliases
-alias e="nvim"
-alias ed="nvim ."
-
-eval "$(zoxide init zsh)"
-
-# mise
-eval "$(/opt/homebrew/bin/mise activate zsh)"
+# asdf
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+# append completions to fpath
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
